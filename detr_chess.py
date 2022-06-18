@@ -3,9 +3,8 @@ _base_ = ['downloads/detr_r50_8x2_150e_coco.py']
 
 # We also need to change the num_classes in head to match the dataset's annotation
 model = dict(
-    roi_head=dict(
-        bbox_head=dict(
-            num_classes=13))
+    bbox_head=dict(
+        num_classes=13)
 )
 # Modify dataset related settings
 dataset_type = 'COCODataset'
