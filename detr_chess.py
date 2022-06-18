@@ -39,5 +39,5 @@ data = dict(
     )
 )
 
-runner = dict(type='EpochBasedRunner', max_epochs=12)
+runner = dict(type='EpochBasedRunner', max_epochs=100)
 checkpoint_config = dict(interval=3)
